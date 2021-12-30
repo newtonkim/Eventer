@@ -11,7 +11,7 @@ const routes = [
     component: EventList,
   },
   {
-    path: '/event/:id', 
+    path: '/event/:id', //dynamic id 
     name: 'event-show',
     component: EventShow,
     props: true
@@ -21,7 +21,6 @@ const routes = [
     name: "event-create",
     component: EventCreate,
   },
-  
   {
     path: "/EventShow",
     name: "EventShow",
