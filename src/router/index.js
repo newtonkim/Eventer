@@ -5,14 +5,16 @@ import EventCreate from "../views/EventCreate.vue";
 
 const routes = [
   {
-    path: "/",
-    name: "event-list",
+    mode: 'history',
+    path: '/',
+    name: 'event-list',
     component: EventList,
   },
   {
-    path: "/event",
-    name: "event-show",
+    path: '/event/:id', 
+    name: 'event-show',
     component: EventShow,
+    props: true
   },
   {
     path: "/event/create",

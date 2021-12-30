@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 
 const routes = [
   {
+    mode: 'history',
     path: "/",
     name: "Home",
     component: Home,
